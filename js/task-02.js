@@ -9,10 +9,10 @@ const ingredients = [
 
 const element = document.querySelector('#ingredients');
 for (const ingridient of ingredients) {
-  const obojetnieJak = document.createElement('li');
+  const listItem = document.createElement('li');
 
-  obojetnieJak.textContent = ingridient;
-  obojetnieJak.classList.add(ingridient);
-  element.append(obojetnieJak);
+  listItem.textContent = ingridient;
+  listItem.classList.add(ingridient);
+  element.append(listItem);
 
 };

@@ -12,30 +12,35 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
 input {
   padding: 8px;
   font: inherit;
 }
-
 button {
   padding: 8px 12px;
   cursor: pointer;
 }
 img {
+  border-radius: 50%;
   height: 1500px;
-  width: 2000px;
+  width: 1500px;
   margin: 50px;
   object-fit: cover;
+  opacity: 0.4;
 }
 .gallery {
   list-style-type: none;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin: 50px;
   padding: 50px;
   flex-wrap: wrap;
 }
 .box {
   background-color: antiquewhite;
+}
+.gallery img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  transition: 0.8s;
 }

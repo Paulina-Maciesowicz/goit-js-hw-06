@@ -13,6 +13,6 @@ const images = [
   },
 ];
 const markup = images
-  .map((image) => `<li><img src=${image.url} alt=${image.alt}></li>`)
+  .map((image) => `<li class="obraz"><img src=${image.url} alt=${image.alt}></li>`)
   .join("");
 document.querySelector("ul.gallery").insertAdjacentHTML("afterbegin", markup);
